@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- 引入字体库 lineicons.com lineicons.css -->
+    <!-- <link rel="stylesheet" href="static/css/LineIcons.css"> -->
+    <link rel="stylesheet" href="static/css/lineicons.css">
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
+    <link rel="stylesheet" href="static/css/default.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>LiLis Portfolio</title>
+</head>
+
+<body>
+    <!-- 予加载，画面正式显示之前，显示一个旋转的圆圈，500毫秒延迟，之后主画面淡出效果
+         参照main.js中的preloader -->
+    <div class="preloader">
+        <div class="loader_34">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- navigation -->
+    <header id="home" class="header-area">
+        <div class="navigation fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <!-- navigation logo -->
+                            <a class="navbar-brand" href="index.html">
+                                <h2 style="color: #754ef9;">LI.DEV</h2>
+                                <!-- <img src="static/image/logo.png" alt="Logo"> -->
+                            </a>
+                            <!-- Bootstrap的 “navbar-toggler” （切换）类 用于小屏幕时的menu三横线的旋转效果 
+                                 data-toggle="collapse"：这是一个自定义的 HTML5 data-* 属性，通常与 JavaScript 框架（如 Bootstrap）一起使用，用于指示按钮的点击将触发某种折叠或下拉效果
+                                 data-target="#navbarSupportedContent"：这个属性指定了按钮点击后要折叠或展开的目标元素的 ID，通常是导航栏的菜单部分
+                                 aria-expanded="false"：这是另一个辅助技术属性，用于指示与按钮相关的 DOM 元素是否展开或折叠。在这种情况下，它设置为 "false"，表示初始状态下导航栏是折叠的-->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <!-- 三个子图标具有相同的 -->
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <!-- 菜单项目 -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <!-- 创建锚点链接 使用href="#aaa" 与 id="aaa"的元素一一对应，id应该是唯一的-->
+                                    <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#about">About</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#projects">Projects</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#work">Portfolio</a></li>
+                                    <!-- <li class="nav-item"><a class="page-scroll" href="#blog">Blog</a></li> -->
+                                    <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- animation icons -->
+        <div id="parallax" class="header-content d-flex align-items-center">
+            <div class="header-shape shape-one layer" data-depth="0.10">
+                <img src="static/image/shape-1.png" alt="Shape">
+            </div>
+            <div class="header-shape shape-tow layer" data-depth="0.30">
+                <img src="static/image/shape-2.png" alt="Shape">
+            </div>
+            <div class="header-shape shape-three layer" data-depth="0.40">
+                <img src="static/image/shape-3.png" alt="Shape">
+            </div>
+            <div class="header-shape shape-fore layer" data-depth="0.60">
+                <img src="static/image/shape-2.png" alt="Shape">
+            </div>
+            <div class="header-shape shape-five layer" data-depth="0.20">
+                <img src="static/image/shape-1.png" alt="Shape">
+            </div>
+            <div class="header-shape shape-six layer" data-depth="0.15">
+                <img src="static/image/shape-4.png" alt="Shape">
+            </div>
+            <div class="header-shape shape-seven layer" data-depth="0.50">
+                <img src="static/image/shape-5.png" alt="Shape">
+            </div>
+            <div class="header-shape shape-eight layer" data-depth="0.40">
+                <img src="static/image/shape-3.png" alt="Shape">
+            </div>
+            <div class="header-shape shape-nine layer" data-depth="0.20">
+                <img src="static/image/shape-6.png" alt="Shape">
+            </div>
+            <div class="header-shape shape-ten layer" data-depth="0.30">
+                <img src="static/image/shape-3.png" alt="Shape">
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- person description -->
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="header-content-right">
+                            <h4 class="sub-title">Hello, I’m</h4>
+                            <h1 class="title">LI LI</h1>
+                            <p>A Front-End, Back-End & Mobile APP Developer</p>
+                            <a class="main-btn" href="#work">View my Work</a>
+                        </div>
+                    </div>
+                    <!-- profile image -->
+                    <div class="col-lg-6 offset-xl-1">
+                        <div class="header-image d-none d-lg-block">
+                            <!-- <img src="static/image/hero.png" alt="hero"> -->
+                            <img src="static/image/profile.JPG" alt="LiLis profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- social media icons -->
+            <div class="header-social">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header-social-icon">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/ami.li.9843"><i class="lni lni-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/li-li-46568a7b/"><i class="lni lni-linkedin-original"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me section -->
+    <section id="about" class="about-area pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="title">About Me</h2>
+                        <p>I am an extroverted, positive, and responsible person with a lot of energy, stress-resistant, and not afraid to take on challenging tasks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-content mt-50">
+                        <h5 class="about-title">Here is some information about my studies:</h5>
+                        <!-- <ul>
+                            <li>I studied computer science for 4 years at North University of China. </li>
+                            <li>Starting in 2017, I took the course Advanced Programming for iPhone and Android at Malmö Yrkeshögskolan and graduated with a VG certificate.</li>
+                            <li>Currently (since January 2023), I am studying at Grit Academy, specializing in web development for e-commerce. Here, I have learned professional front-end development skills, such as HTML, CSS, JavaScript, as well as back-end technologies like PHP and the database MySQL. The course also covers design, user experience, digital marketing, and professional knowledge in entrepreneurship and consulting.</li>
+                        </ul> -->
+                        <p>I studied computer science for 4 years at North University of China. </p>
+                        <p>Starting in 2017, I took the course Advanced Programming for iPhone and Android at Malmö Yrkeshögskolan and graduated with a VG certificate.</p>
+                        <p>Currently (since January 2023), I am studying at Grit Academy, specializing in web development for e-commerce. Here, I have learned professional front-end development skills, such as HTML, CSS, JavaScript, as well as back-end technologies like PHP and the database MySQL. The course also covers design, user experience, digital marketing, and professional knowledge in entrepreneurship and
+                        consulting.</p>
+                        <ul class="clearfix">
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni lni-calendar"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Date of birth:</span> 29 March</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni lni-envelope"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Email: </span>palmlearnli@gmail.com</p>
+                                    </div>
+                                    <!-- <div class="info-text">
+                                        <p><span>Email:</span> <a href="email-protection.html" class="__cf_email__" data-cfemail="0d7d6c7f66687f4d60747e647968236e6260">[email&#160;protected]</a></p>
+                                    </div> -->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni lni-headphone"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Phone:</span> +46 76-033 56 96</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-info d-flex align-items-center">
+                                    <div class="info-icon">
+                                        <i class="lni lni-map-marker"></i>
+                                    </div>
+                                    <div class="info-text">
+                                        <p><span>Location:</span> Malmo, SWEDEN</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-5 offset-xl-1 col-lg-6">
+                    <div class="about-skills pt-25">
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">HTML</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">80</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">CSS</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">60</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="60"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">JAVASCRIPT</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">90</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">PHP</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">70</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">RELATIONS DATABASE(MySQL, Oracle, SQLServer)</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">95</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">NoSQL DATABASE(Firebase, IBM NoSQL)</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">95</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">JAVA, VB, VB.NET </h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">90</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">PL/SQL, PRO*C</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">90</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">SWIFT, KOTLIN</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">70</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="services-area gray-bg pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-30">
+                        <h2 class="title">My Skills</h2>
+                        <p>Below is a part of the projects I have worked on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <!-- 在该div上方放置一个透明的链接层 -->
+                <!-- <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <a target="_blank" 
+                           href="https://li3239.github.io/webb23-html-mp2-Li-Li/"
+                           style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 10;"></a>
+
+                        <div class="service-icon">
+                            <i class="lni lni-code-alt"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">HTML & CSS</h4>
+                            <p>A dumy restaurant website.</p>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni lni-code-alt"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">
+                                <a target="_blank">Html & CSS</a>
+                            </h4>
+                            <!-- <p>Personal profile website.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni lni-nodejs"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">
+                                <a target="_blank">JavaScript, Node.js</a>
+                            </h4>
+                            <!-- <p>Personal profile website.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni lni-php"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">
+                                <a target="_blank">Php</a>
+                            </h4>
+                            <!-- <p>Personal profile website.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni lni-cart-full"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">
+                                <a target="_blank">e-Commerce Development</a>
+                            </h4>
+                            <!-- <p>Personal profile website.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni lni-mobile"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">
+                                <a target="_blank">Mobile Development</a>
+                            </h4>
+                            <!-- <p>Personal profile website.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni lni-website"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">
+                                <a target="_blank">Web Development</a>
+                            </h4>
+                            <!-- <p>Personal profile website.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni lni-database"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">
+                                <a target="_blank">Back-end Development</a>
+                            </h4>
+                            <!-- <p>Personal profile website.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni lni-pallet"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">
+                                <a target="_blank">UX/UI Design</a>
+                            </h4>
+                            <!-- <p>Personal profile website.</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Have any project on mind? section -->
+    <section id="call-to-action" class="call-to-action pt-125 pb-130 bg_cover" style="background-image: url(static/image/call-to-action.jpg)">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-9">
+                    <div class="call-action-content text-center">
+                        <h2 class="action-title">Have any project on mind?</h2>
+                        <p>Are you interested in me and the projects I have worked on? You can download my resume here to learn more.</p>
+                        <ul>
+                            <li><a class="main-btn custom" href="https://drive.google.com/uc?export=download&id=1jUsVNx8RcNbhYBuR3eq8ExY2n9qAmaxQ" download="CV_LiLi.pdf">download cv</a></li>
+                            <li><a class="main-btn custom-2" href="#contact">contact me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- My Recent Works section -->
+    <section id="work" class="work-area pt-125 pb-130">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="section-title pb-25">
+                        <h2 class="title">My Recent Works</h2>
+                        <p>Below is a summary of the projects I have completed in the past year, which include front-end development involving HTML, CSS, and JavaScript, as well as back-end development in PHP.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- html&css project restaurang -->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="single-work text-center mt-30">
+                        <div class="work-image">
+                            <img src="static/image/project-html-restaurang.png" alt="work">
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-content">
+                                <h3 class="work-title">A dumy restaurant website</h3>
+                                <h3 class="work-title">HTML & CSS</h3>
+                                <ul>
+                                    <!-- gitthub link -->
+                                    <li><a target="_blank" href="https://github.com/Li3239/webb23-html-mp2-Li-Li"><i class="lni lni-github"></i></a></li>
+                                    <!-- live page -->
+                                    <li><a target="_blank" href="https://li3239.github.io/webb23-html-mp2-Li-Li/"><i class="lni lni-link"></i></a></li>
+                                    <!-- popup -->
+                                    <!-- <li><a class="image-popup" href="static/image/w-1.jpg"><i class="lni lni-plus"></i></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- html&css project profile -->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="single-work text-center mt-30">
+                        <div class="work-image">
+                            <img src="static/image/project-app.png" alt="work">
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-content">
+                                <h3 class="work-title">Profile Homepage</h3>
+                                <h3 class="work-title">HTML & CSS</h3>
+                                <ul>
+                                    <!-- gitthub link -->
+                                    <li><a target="_blank" href="https://github.com/Li3239/webb23-html-slutprojekt-Li-Li"><i class="lni lni-github"></i></a></li>
+                                    <!-- live page -->
+                                    <li><a target="_blank" href="https://li3239.github.io/webb23-html-slutprojekt-Li-Li/"><i class="lni lni-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- js project Weather Forecast -->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="single-work text-center mt-30">
+                        <div class="work-image">
+                            <img src="static/image/project-js-weather forecast.png" alt="work">
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-content">
+                                <h3 class="work-title">Weather forecast website</h3>
+                                <h3 class="work-title">JAVASCRIPT, HTML & CSS</h3>
+                                <ul>
+                                    <!-- gitthub link -->
+                                    <li><a target="_blank" href="https://github.com/Li3239/Li3239-webb23-js1-slutprojekt-Li-Li"><i class="lni lni-github"></i></a></li>
+                                    <!-- live page -->
+                                    <li><a target="_blank" href="https://li3239.github.io/Li3239-webb23-js1-slutprojekt-Li-Li/"><i class="lni lni-link"></i></a></li>
+                                    <!-- popup -->
+                                    <!-- <li><a class="image-popup" href="static/image/w-1.jpg"><i class="lni lni-plus"></i></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- js project Rock-Paper-Scissors Game -->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="single-work text-center mt-30">
+                        <div class="work-image">
+                            <img src="static/image/project-rock-paper-scissors.png" alt="work">
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-content">
+                                <h3 class="work-title">Rock-Paper-Scissors Game</h3>
+                                <h3 class="work-title">JAVASCRIPT, HTML & CSS</h3>
+                                <ul>
+                                    <!-- gitthub link -->
+                                    <li><a target="_blank" href="https://github.com/Li3239/webb23-js1-mp2-Li-Li"><i class="lni lni-github"></i></a></li>
+                                    <!-- live page -->
+                                    <li><a target="_blank" href="https://li3239.github.io/webb23-js1-mp2-Li-Li/"><i class="lni lni-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- js project WebShop -->
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="single-work text-center mt-30">
+                        <div class="work-image">
+                            <img src="static/image/project-webshop-eighton.png" alt="work">
+                        </div>
+                        <div class="work-overlay">
+                            <div class="work-content">
+                                <h3 class="work-title">Webshop</h3>
+                                <h3 class="work-title">JAVASCRIPT, React, HTML & CSS</h3>
+                                <h3 class="work-title">Php, MySQL</h3>
+                                <ul>
+                                    <!-- gitthub link -->
+                                    <li><a target="_blank" href="https://github.com/Li3239/webb23-js2-slutprojekt-Li-Li"><i class="lni lni-github"></i></a></li>
+                                    <li><a target="_blank" href="https://github.com/Li3239/webb23-js2-slutprojekt-Li-Li"><i class="lni lni-github"></i></a></li>
+                                    <!-- live page -->
+                                    <!-- <li><a target="_blank" href="https://li3239.github.io/webb23-js1-mp2-Li-Li/"><i class="lni lni-link"></i></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+
+<!-- </div> -->
+
+    <!-- Get in Touch section -->
+    <section id="contact" class="contact-area pt-125 pb-130 gray-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-25">
+                        <h2 class="title">Get In Touch</h2>
+                        <p>I am very eager to obtain a position in software development, whether it be in front-end, back-end, or mobile app development. If you are interested in my work, please contact me through the following means.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="lni lni-map-marker"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Location</h6>
+                            <p>Malmo, SWEDEN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="lni lni-phone"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Phone</h6>
+                            <p>(46) 76 033 56 96</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="lni lni-envelope"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Email</h6>
+                            <p>palmlearnli@gmail.com</p>
+                            <!-- <p><a href="email-protection.html" class="__cf_email__" data-cfemail="3a494f4a4a55484e7a43554f48575b535614595557">[email&#160;protected]</a></p>
+                            <p><a href="email-protection.html" class="__cf_email__" data-cfemail="8ce5e2eae3cce4e9e0fce0e5e2e9a2efe3e1">[email&#160;protected]</a></p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-form pt-30">
+                        <!-- <form id="contact-form" action="assets/contact.php"> -->
+                        <form id="contact-form">
+                            <input type="hidden" name="contact_number">
+                            <!-- 联系人姓名 -->
+                            <div class="single-form">
+                                <input type="text" name="user_name" placeholder="Name">
+                            </div>
+                            <!-- 联系人邮件地址 -->
+                            <div class="single-form">
+                                <input type="email" name="user_email" placeholder="Email">
+                            </div>
+                            <!-- 联系内容 -->
+                            <div class="single-form">
+                                <textarea name="message" placeholder="Message"></textarea>
+                            </div>
+                            <!--  Send Concact Email完成后，显示处理结果 -->
+                            <p class="form-message"></p>
+                            <div class="single-form">
+                                <button class="main-btn" type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-map mt-60">
+                        <div class="gmap_canvas">
+                            <iframe id="gmap_canvas" 
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d72179.00736696733!2d13.046239709911992!3d55.57426766545192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sse!4v1703780977186!5m2!1ssv!2sse" 
+                                    width="600" height="450" style="border:0;" 
+                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer" class="footer-area">
+        <div class="footer-widget pt-130 pb-130">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="footer-content text-center">
+                            <a href="index.html">
+                            </a>
+                            <!-- <p class="mt-">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci- didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe- rcitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+                            <ul>
+                                <li><a target="_blank" href="https://www.facebook.com/ami.li.9843"><i class="lni lni-facebook"></i></a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/in/li-li-46568a7b/"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright pb-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-text text-center pt-20">
+                            <p>Copyright &copy; 2024. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- arrow link to move back to the top  -->
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!-- 引入EmailJS library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script data-cfasync="false" src="static/js/email-decode.min.js"></script>
+    <script src="static/js/modernizr-3.6.0.min.js"></script>
+    <script src="static/js/jquery-1.12.4.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    <script src="static/js/parallax.min.js"></script>
+    <script src="static/js/waypoints.min.js"></script>
+    <script src="static/js/jquery.counterup.min.js"></script>
+    <script src="static/js/ajax-contact.js"></script>
+    <script src="static/js/jquery.appear.min.js"></script>
+
+    <!-- 创建页面内部平滑滚动效果的交互功能。
+        它的主要作用是在单页网站或网页内的锚点链接被点击时，
+        以平滑的动画方式滚动到目标位置 -->
+    <script src="static/js/scrolling-nav.js"></script>
+
+    <!-- 引入open src 添加动画效果 -->
+    <script src="static/js/jquery.easing.min.js"></script>
+
+    <!-- 引入open src 表单验证插件 -->
+    <!-- <script src="static/js/validator.min.js"></script> -->
+
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>
